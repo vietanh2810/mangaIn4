@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+    background-color: #0e0d0d;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+.manga-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.manga {
+  width: 230px;
+  border-radius: 2px;
+  box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+  margin: 0.5rem;
+  background-color: #201e1e;
+  overflow: hidden;
+  position: relative;
+}
+
+.manga img {
+  max-width: 100%;
+}
+
+.manga-info {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  justify-content: space-between;
+  font-size: 16px;
+}
+
+.manga-more-infos {
+  background-color: #fff;
+  color: #201e1e;
+  padding: 1rem;
+  position: absolute;
+  bottom:  0;
+  left: 0;
+  right: 0;
+  transform: translateY(100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.manga:hover .manga-more-infos {
+  transform: translateY(0%);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+h1 {
+  font-weight: 300  ;
+}
+
+.search {
+  background-color: transparent;
+  border: 2px solid #0e0d0d;
+  border-radius: 50px;
+  color: white;
+  font-family: inherit;
+  font-size: 1.2rem;
+  padding: 0.5rem 1.5rem;
+}
